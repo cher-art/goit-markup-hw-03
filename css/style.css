@@ -17,6 +17,10 @@
   padding: 0;
 }
 
+img{
+  border-style: none;
+}
+
 body {
   background-color: var(--plain-text-color);
   color: var(--primery-text-color);
