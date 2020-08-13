@@ -267,7 +267,6 @@ section .title {
   /* border: 2px solid tomato; */
   border-radius: 6px;
   width: 270px;
-  height: 368px;
   background-color: var(--plain-text-color);
 }
 
@@ -292,6 +291,12 @@ section .title {
 .our-team .profession {
   margin-top: 10px;
   text-align: center;
+}
+
+.our-team .social-list{
+  display: flex;
+  width: max-content;
+  margin: 0 auto;
 }
 
 .our-team .social:hover,
