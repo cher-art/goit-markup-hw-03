@@ -12,12 +12,18 @@
   --plain-text-color: #ffffff;
 }
 
-* {
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
 }
 
-img{
+img {
   border-style: none;
 }
 
@@ -36,6 +42,7 @@ ul {
 
 .logo {
   display: block;
+  /* margin-right: 85px; */
   font-family: Raleway, cursive;
   font-weight: 700;
   font-size: 26px;
@@ -51,9 +58,10 @@ ul {
 .container {
   padding-top: 0;
   padding-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  width: 1200px;
   /* outline: 2px solid tomato; */
 }
 
@@ -106,7 +114,10 @@ section .title {
 
 .auth-nav {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .auth-nav .item + .item {
@@ -114,7 +125,8 @@ section .title {
 }
 
 .auth-nav .item {
-  display: block;
+  display: flex;
+  margin-left: auto;
 }
 
 .auth-nav .link {
@@ -140,6 +152,8 @@ section .title {
 }
 
 .hero .title {
+  margin: 0 auto;
+  width: 696px;
   padding-top: 200px;
   font-weight: 900;
   font-size: 44px;
@@ -209,13 +223,14 @@ section .title {
 .about-us .list {
   display: flex;
   justify-content: space-between;
+  /* font-size: 0; */
 }
 
 .about-us .item + .item {
   margin-left: 30px;
 }
 
-.about-us .about-us .work {
+.about-us h3{
   margin: 0;
   color: var(--plain-text-color);
   background: rgba(47, 48, 58, 0.8);
@@ -277,6 +292,19 @@ section .title {
 .our-team .social:focus {
   background-color: var(--accent-text-color);
 }
+
+/* КЛИЕНТЫ */
+
+.clients .list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients .item{
+  border: 1px solid #f5f4fa;
+}
+
+/* ФУТЕР */
 
 .page-footer {
   background-color: #2f303a;
